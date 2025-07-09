@@ -1,8 +1,8 @@
 import {
   LucideProps,
-  CarFront,
-  MapPinned,
-  Users2,
+  Car,
+  MapPin,
+  Users,
   Moon,
   SunMedium,
   Twitter,
@@ -12,9 +12,9 @@ import {
 export type Icon = LucideIcon
 
 export const Icons = {
-  car: CarFront,
-  map: MapPinned,
-  users: Users2,
+  car: Car,
+  map: MapPin,
+  users: Users,
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
