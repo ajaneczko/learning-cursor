@@ -14,6 +14,8 @@ export default function IndexPage() {
         <p className="max-w-[700px] text-lg text-muted-foreground">
           Accessible and customizable components that you can copy and paste
           into your apps. Free. Open Source. And Next.js 13 Ready.
+          <br />
+          Lets test if this works
         </p>
       </div>
       <div className="flex gap-4">
