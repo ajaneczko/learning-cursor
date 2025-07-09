@@ -8,7 +8,7 @@ interface Vehicle {
   image: string
   regNumber: string
   driver: string
-  odometer: number
+  odometer: string
   tags: string[]
   brand: { name: string; logo: string }
   type: string
@@ -20,7 +20,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=400&q=80",
     regNumber: "ABC 1234",
     driver: "John Doe",
-    odometer: 45230,
+    odometer: "45 230",
     tags: ["Electric", "Active"],
     brand: { name: "Tesla", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" },
     type: "Sedan",
@@ -30,7 +30,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "XYZ 5678",
     driver: "Jane Smith",
-    odometer: 12890,
+    odometer: "12 890",
     tags: ["Diesel", "Inactive"],
     brand: { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
     type: "SUV",
@@ -40,7 +40,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?auto=format&fit=crop&w=400&q=80",
     regNumber: "LMN 9101",
     driver: "Alice Brown",
-    odometer: 30210,
+    odometer: "30 210",
     tags: ["Hybrid", "Active"],
     brand: { name: "Toyota", logo: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_logo.png" },
     type: "Hatchback",
@@ -50,7 +50,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&w=400&q=80",
     regNumber: "DEF 2345",
     driver: "Bob White",
-    odometer: 22000,
+    odometer: "22 000",
     tags: ["Petrol", "Active"],
     brand: { name: "Audi", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Audi_logo.png" },
     type: "Sedan",
@@ -60,7 +60,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
     regNumber: "GHI 3456",
     driver: "Carol Black",
-    odometer: 17500,
+    odometer: "17 500",
     tags: ["Electric", "Inactive"],
     brand: { name: "Nissan", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Nissan_logo.png" },
     type: "Hatchback",
@@ -70,7 +70,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "JKL 4567",
     driver: "David Green",
-    odometer: 38900,
+    odometer: "38 900",
     tags: ["Diesel", "Active"],
     brand: { name: "Mercedes", logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" },
     type: "SUV",
@@ -80,7 +80,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
     regNumber: "MNO 5678",
     driver: "Eve Blue",
-    odometer: 9000,
+    odometer: "9 000",
     tags: ["Hybrid", "Inactive"],
     brand: { name: "Kia", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Kia_logo.png" },
     type: "Crossover",
@@ -90,7 +90,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "PQR 6789",
     driver: "Frank Red",
-    odometer: 60000,
+    odometer: "60 000",
     tags: ["Petrol", "Active"],
     brand: { name: "Ford", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" },
     type: "Pickup",
@@ -100,7 +100,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?auto=format&fit=crop&w=400&q=80",
     regNumber: "STU 7890",
     driver: "Grace Yellow",
-    odometer: 34000,
+    odometer: "34 000",
     tags: ["Electric", "Active"],
     brand: { name: "Hyundai", logo: "https://upload.wikimedia.org/wikipedia/commons/0/09/Hyundai_Motor_Company_logo.svg" },
     type: "Sedan",
@@ -110,7 +110,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "VWX 8901",
     driver: "Hank Violet",
-    odometer: 41000,
+    odometer: "41 000",
     tags: ["Diesel", "Inactive"],
     brand: { name: "Volkswagen", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/VW_logo_2019.png" },
     type: "SUV",
@@ -120,7 +120,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80",
     regNumber: "YZA 9012",
     driver: "Ivy Orange",
-    odometer: 5000,
+    odometer: "5 000",
     tags: ["Hybrid", "Active"],
     brand: { name: "Honda", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Honda_logo.png" },
     type: "Sedan",
@@ -130,7 +130,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=400&q=80",
     regNumber: "BCD 0123",
     driver: "Jack Pink",
-    odometer: 8000,
+    odometer: "8 000",
     tags: ["Petrol", "Inactive"],
     brand: { name: "Chevrolet", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Chevrolet_logo.svg" },
     type: "Pickup",
@@ -140,7 +140,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?auto=format&fit=crop&w=400&q=80",
     regNumber: "EFG 1234",
     driver: "Kara Silver",
-    odometer: 12000,
+    odometer: "12 000",
     tags: ["Electric", "Active"],
     brand: { name: "Tesla", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" },
     type: "Sedan",
@@ -150,7 +150,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
     regNumber: "HIJ 2345",
     driver: "Leo Gold",
-    odometer: 25000,
+    odometer: "25 000",
     tags: ["Diesel", "Active"],
     brand: { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
     type: "SUV",
@@ -160,7 +160,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
     regNumber: "KLM 3456",
     driver: "Mona Bronze",
-    odometer: 33000,
+    odometer: "33 000",
     tags: ["Hybrid", "Inactive"],
     brand: { name: "Toyota", logo: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_logo.png" },
     type: "Hatchback",
@@ -170,7 +170,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "NOP 4567",
     driver: "Ned Copper",
-    odometer: 47000,
+    odometer: "47 000",
     tags: ["Petrol", "Active"],
     brand: { name: "Mercedes", logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" },
     type: "SUV",
@@ -180,7 +180,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
     regNumber: "QRS 5678",
     driver: "Olga Jade",
-    odometer: 21000,
+    odometer: "21 000",
     tags: ["Electric", "Inactive"],
     brand: { name: "Kia", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Kia_logo.png" },
     type: "Crossover",
@@ -190,7 +190,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "TUV 6789",
     driver: "Pauline Ruby",
-    odometer: 39000,
+    odometer: "39 000",
     tags: ["Diesel", "Active"],
     brand: { name: "Ford", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" },
     type: "Pickup",
@@ -200,7 +200,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?auto=format&fit=crop&w=400&q=80",
     regNumber: "WXY 7890",
     driver: "Quinn Pearl",
-    odometer: 27000,
+    odometer: "27 000",
     tags: ["Hybrid", "Active"],
     brand: { name: "Hyundai", logo: "https://upload.wikimedia.org/wikipedia/commons/0/09/Hyundai_Motor_Company_logo.svg" },
     type: "Sedan",
@@ -210,7 +210,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&w=400&q=80",
     regNumber: "ZAB 8901",
     driver: "Rita Sapphire",
-    odometer: 15000,
+    odometer: "15 000",
     tags: ["Petrol", "Inactive"],
     brand: { name: "Volkswagen", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/VW_logo_2019.png" },
     type: "SUV",
@@ -220,7 +220,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80",
     regNumber: "CDE 9012",
     driver: "Sam Topaz",
-    odometer: 32000,
+    odometer: "32 000",
     tags: ["Electric", "Active"],
     brand: { name: "Tesla", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" },
     type: "Sedan",
@@ -230,7 +230,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=400&q=80",
     regNumber: "FGH 0123",
     driver: "Tina Quartz",
-    odometer: 22000,
+    odometer: "22 000",
     tags: ["Diesel", "Inactive"],
     brand: { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
     type: "SUV",
@@ -240,7 +240,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?auto=format&fit=crop&w=400&q=80",
     regNumber: "IJK 1234",
     driver: "Uma Onyx",
-    odometer: 18000,
+    odometer: "18 000",
     tags: ["Hybrid", "Active"],
     brand: { name: "Toyota", logo: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_logo.png" },
     type: "Hatchback",
@@ -250,7 +250,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
     regNumber: "LMN 2345",
     driver: "Vera Amber",
-    odometer: 26000,
+    odometer: "26 000",
     tags: ["Petrol", "Active"],
     brand: { name: "Mercedes", logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" },
     type: "SUV",
@@ -260,7 +260,7 @@ const vehicles: Vehicle[] = [
     image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
     regNumber: "OPQ 3456",
     driver: "Will Garnet",
-    odometer: 14000,
+    odometer: "14 000",
     tags: ["Electric", "Inactive"],
     brand: { name: "Tesla", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" },
     type: "Sedan",
@@ -352,7 +352,7 @@ function VehicleDrawer({ vehicle, onClose }: { vehicle: Vehicle | null; onClose:
               <img src={vehicle.image} alt={vehicle.regNumber} className="w-full h-48 object-cover rounded mb-4" />
               <div className="mb-2 text-lg font-semibold">{vehicle.regNumber}</div>
               <div className="mb-2 text-sm text-muted-foreground">Driver: {vehicle.driver}</div>
-              <div className="mb-2 text-sm">Odometer: <span className="font-medium">{vehicle.odometer.toLocaleString()} km</span></div>
+              <div className="mb-2 text-sm">Odometer: <span className="font-medium">{vehicle.odometer} km</span></div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="tags">
@@ -432,7 +432,7 @@ export default function VehiclesPage() {
         <h1 className="text-2xl font-bold">Vehicles</h1>
         <div className="flex gap-2">
           <button
-            className={`px-3 py-1 rounded border ${view === 'card' ? 'bg-blue-600 text-white' : 'bg-white dark:bg-muted'}`}
+            className={`px-3 py-1 rounded border ${view === 'card' ? 'bg-pink-600 text-white' : 'bg-white dark:bg-muted'}`}
             onClick={() => setView('card')}
           >
             Card View
@@ -456,7 +456,7 @@ export default function VehiclesPage() {
           {vehicles.map(vehicle => (
             <div
               key={vehicle.id}
-              className="bg-white dark:bg-muted rounded-lg shadow p-4 flex flex-col gap-3 border cursor-pointer hover:ring-2 ring-blue-400"
+              className="bg-white dark:bg-muted rounded-lg shadow p-4 flex flex-col gap-3 border cursor-pointer hover:ring-2 ring-pink-400"
               onClick={() => setSelected(vehicle)}
             >
               <div className="flex items-center gap-2 mb-2">
@@ -467,10 +467,10 @@ export default function VehiclesPage() {
               <img src={vehicle.image} alt={vehicle.regNumber} className="w-full h-32 object-cover rounded-md mb-2" />
               <div className="font-semibold text-lg">{vehicle.regNumber}</div>
               <div className="text-sm text-muted-foreground">Driver: {vehicle.driver}</div>
-              <div className="text-sm">Odometer: <span className="font-medium">{vehicle.odometer.toLocaleString()} km</span></div>
+              <div className="text-sm">Odometer: <span className="font-medium">{vehicle.odometer} km</span></div>
               <div className="flex flex-wrap gap-2 mt-2">
                 {vehicle.tags.map((tag: string) => (
-                  <span key={tag} className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-0.5 rounded text-xs font-medium">
+                  <span key={tag} className="bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-100 px-2 py-0.5 rounded text-xs font-medium">
                     {tag}
                   </span>
                 ))}
@@ -496,7 +496,7 @@ export default function VehiclesPage() {
               {vehicles.map(vehicle => (
                 <tr
                   key={vehicle.id}
-                  className="border-b cursor-pointer hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                  className="border-b cursor-pointer hover:bg-pink-50 dark:hover:bg-pink-900/20"
                   onClick={() => setSelected(vehicle)}
                 >
                   <td className="p-2 border flex items-center gap-2">
@@ -509,11 +509,11 @@ export default function VehiclesPage() {
                   </td>
                   <td className="p-2 border font-semibold">{vehicle.regNumber}</td>
                   <td className="p-2 border">{vehicle.driver}</td>
-                  <td className="p-2 border">{vehicle.odometer.toLocaleString()} km</td>
+                  <td className="p-2 border">{vehicle.odometer} km</td>
                   <td className="p-2 border">
                     <div className="flex flex-wrap gap-1">
                       {vehicle.tags.map((tag: string) => (
-                        <span key={tag} className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-0.5 rounded text-xs font-medium">
+                        <span key={tag} className="bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-100 px-2 py-0.5 rounded text-xs font-medium">
                           {tag}
                         </span>
                       ))}
