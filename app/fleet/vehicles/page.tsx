@@ -429,7 +429,7 @@ export default function VehiclesPage() {
   return (
     <div className="p-8">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Vehicles</h1>
+        <h1 className="text-2xl font-bold">🤡 Vehicles</h1>
         <div className="flex gap-2">
           <button
             className={`px-3 py-1 rounded border ${view === 'card' ? 'bg-pink-600 text-white' : 'bg-white dark:bg-muted'}`}
