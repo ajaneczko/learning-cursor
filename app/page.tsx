@@ -18,6 +18,12 @@ export default function IndexPage() {
       </div>
       <div className="flex gap-4">
         <Link
+          href={"/fleet"}
+          className={buttonVariants({ variant: "default", size: "lg" })}
+        >
+          Go to My Fleet
+        </Link>
+        <Link
           href={siteConfig.links.docs}
           target="_blank"
           rel="noreferrer"
